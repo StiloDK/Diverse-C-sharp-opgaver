@@ -1,0 +1,97 @@
+using System.Reflection.PortableExecutable;
+
+namespace Hello_world
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+            Name();
+            Numbers2();
+            Age();
+            Celcius();
+            Caculator();
+            Welcome();
+            Loop();
+            SimpleArrays();
+        }
+        static void Name()
+        {
+            string Name = "Daniel";
+            Console.WriteLine(Name);
+        }
+        static void Numbers2()
+        {
+            Console.WriteLine("Write 2 number");
+            int tal1 = Convert.ToInt32(Console.ReadLine());
+            int tal2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("the number added is: {0}", tal1 + tal2);
+            Console.WriteLine("the number subtracted is: {0}", tal1 - tal2);
+            Console.WriteLine("the number multiplied is: {0}", tal1 * tal2);
+            Console.WriteLine("the number divided is: {0}", tal1 / tal2);
+        }
+        static void Age()
+        {
+            Console.WriteLine("Write your age");
+            int Age = Convert.ToInt32(Console.ReadLine());
+            if (Age >= 18)
+            {
+                Console.WriteLine("Du er møndig");
+            }
+            else
+            {
+
+                Console.WriteLine("Du er ikke møndig >:(");
+            }
+        }
+        static void Celcius()
+        {
+            Console.WriteLine("Write some Fahrenheit");
+            int Fahrenheit = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("That would be {0} Celcius", (Fahrenheit-32)*5/9);
+        }
+        static void Caculator()
+        {
+            Console.WriteLine("Welcome to calculator \r Please type 2 numbers");
+            int tal1 = Convert.ToInt32(Console.ReadLine());
+            int tal2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Now type in what to do with them,+,-,*,/");
+            switch (Console.ReadLine())
+            {
+                case "+":
+                    Console.WriteLine("Added together {0}", tal1 + tal2);
+                    break;
+                case "-":
+                    Console.WriteLine("Subtracted together{0}", tal1 - tal2);
+                    break;
+                case "*":
+                    Console.WriteLine("Multiplied together{0}", tal1 * tal2);
+                    break;
+                case "/":
+                    Console.WriteLine("Divided together{0}", tal1 / tal2);
+                    break;
+            }
+        }
+        static void Welcome()
+        {
+            Message();
+            static void Message()
+            {
+                Console.WriteLine("Hello");
+            }
+        }
+        static void Loop()
+        {
+            for (int i = 1; i < 11; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        static void SimpleArrays()
+        {
+            string[] strings = { "apple", "apple2", "Apple" };
+            Console.WriteLine("{0}{1}{2}",strings);
+        }
+    }
+}
