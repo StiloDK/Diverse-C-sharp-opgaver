@@ -1,0 +1,13 @@
+namespace Opgave11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            const double moms = 1.25;
+            Console.Write("Skriv pris du ville have moms på: ");
+            double Pris = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Prisen med moms er: {0}", Pris * moms);
+        }
+    }
+}
