@@ -8,3 +8,4 @@ namespace Opgave16
             double weight = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("\rYour BMI is {0}", weight / (height * height));
         }
+}
