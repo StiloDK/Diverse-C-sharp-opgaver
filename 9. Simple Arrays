@@ -1,0 +1,11 @@
+namespace Opgave9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] strings = { "apple", "apple2", "apple3" };
+            Console.WriteLine("{0} {1} {2}", strings[0], strings[1], strings[2]);
+        }
+    }
+}
