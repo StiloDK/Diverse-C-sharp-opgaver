@@ -1,0 +1,16 @@
+namespace Opgave3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Write 2 numbers");
+            int tal1 = Convert.ToInt32(Console.ReadLine());
+            int tal2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The number added is: {0}", tal1 + tal2);
+            Console.WriteLine("The number subtracted is: {0}", tal1 - tal2);
+            Console.WriteLine("The number multiplied is: {0}", tal1 * tal2);
+            Console.WriteLine("The number divided is: {0}", tal1 / tal2);
+        }
+    }
+}
