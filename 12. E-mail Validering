@@ -1,0 +1,19 @@
+namespace Opgave12
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Write in your Email");
+            string? Email = Console.ReadLine();
+            if (Email.Contains("@"))
+            {
+                Console.WriteLine("It does contain @");
+            }
+            else
+            {
+                Console.WriteLine("It doesn't contain @");
+            }
+        }
+    }
+}
