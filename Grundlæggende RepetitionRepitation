@@ -15,12 +15,19 @@ namespace Hello_world
             Welcome();
             Loop();
             SimpleArrays();
+            Konstants();
+            Email();
+            NumberOrder();
         }
+
+
         static void Name()
         {
             string Name = "Daniel";
             Console.WriteLine(Name);
         }
+
+
         static void Numbers2()
         {
             Console.WriteLine("Write 2 number");
@@ -31,6 +38,8 @@ namespace Hello_world
             Console.WriteLine("the number multiplied is: {0}", tal1 * tal2);
             Console.WriteLine("the number divided is: {0}", tal1 / tal2);
         }
+
+
         static void Age()
         {
             Console.WriteLine("Write your age");
@@ -42,18 +51,22 @@ namespace Hello_world
             else
             {
 
-                Console.WriteLine("Du er ikke møndig >:(");
+                Console.WriteLine("You are not of legal age >:(");
             }
         }
+
+
         static void Celcius()
         {
             Console.WriteLine("Write some Fahrenheit");
             int Fahrenheit = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("That would be {0} Celcius", (Fahrenheit-32)*5/9);
         }
+
+
         static void Caculator()
         {
-            Console.WriteLine("Welcome to calculator \r Please type 2 numbers");
+            Console.WriteLine("Welcome to calculator \rPlease type 2 numbers");
             int tal1 = Convert.ToInt32(Console.ReadLine());
             int tal2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Now type in what to do with them,+,-,*,/");
@@ -73,6 +86,8 @@ namespace Hello_world
                     break;
             }
         }
+
+
         static void Welcome()
         {
             Message();
@@ -81,6 +96,8 @@ namespace Hello_world
                 Console.WriteLine("Hello");
             }
         }
+
+
         static void Loop()
         {
             for (int i = 1; i < 11; i++)
@@ -88,10 +105,57 @@ namespace Hello_world
                 Console.WriteLine(i);
             }
         }
+
+
         static void SimpleArrays()
         {
-            string[] strings = { "apple", "apple2", "Apple" };
-            Console.WriteLine("{0}{1}{2}",strings);
+            string[] strings = { "apple", "apple2", "apple3" };
+            Console.WriteLine("{0} {1} {2}",strings);
         }
+
+
+        static void MultiDimensionelleArrays()
+        {
+            Console.WriteLine("Nope");
+        }
+
+
+        static void Konstants()
+        {
+            const double moms = 1.25;
+            Console.Write("Skriv pris du ville have moms på: ");
+            double Pris = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Prisen med moms er: {0}", Pris * moms);
+        }
+
+
+        static void Email()
+        {
+            Console.WriteLine("Write in your Email");
+            string? Email = Console.ReadLine();
+            if (Email.Contains("@"))
+            {
+                Console.WriteLine("It does contain @");
+            }
+            else
+            {
+                Console.WriteLine("It doesn't contain @");
+            }
+        }
+
+
+        static void NumberOrder()
+        {
+            Console.WriteLine("Please write in 3 numbers");
+            double Tal1 = Convert.ToDouble(Console.ReadLine());
+            double Tal2 = Convert.ToDouble(Console.ReadLine());
+            double Tal3 = Convert.ToDouble(Console.ReadLine());
+
+            double[] Numbers = {Tal1, Tal2, Tal3};
+            Array.Sort(Numbers);
+
+            Console.WriteLine("the numbers in accending order is {0} {1} {2}", Numbers[0], Numbers[1], Numbers[2]);
+        }
+
     }
 }
