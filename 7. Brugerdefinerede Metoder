@@ -1,0 +1,11 @@
+namespace Opgave7
+{
+        static void Welcome()
+        {
+            Message();
+            static void Message()
+            {
+                Console.WriteLine("Hello");
+            }
+        }
+}
