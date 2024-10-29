@@ -1,0 +1,10 @@
+namespace Opgave16
+{
+  static void BMI()
+        {
+            Console.Write("Write your height pls: ");
+            double height =Convert.ToDouble(Console.ReadLine()) / 100;
+            Console.Write("\rAnd your weight: ");
+            double weight = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("\rYour BMI is {0}", weight / (height * height));
+        }
