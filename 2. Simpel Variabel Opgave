@@ -1,0 +1,11 @@
+namespace Opgave2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string Name = "Daniel";
+            Console.WriteLine(Name);
+        }
+    }
+}
