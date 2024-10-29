@@ -1,0 +1,19 @@
+namespace Opgave4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Write your age");
+            int Age = Convert.ToInt32(Console.ReadLine());
+            if (Age >= 18)
+            {
+                Console.WriteLine("Du er møndig");
+            }
+            else
+            {
+                Console.WriteLine("You are not of legal age >:(");
+            }
+        }
+    }
+}
