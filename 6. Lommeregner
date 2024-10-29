@@ -1,0 +1,31 @@
+namespace Opgave6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to calculator \rPlease type 2 numbers");
+            int tal1 = Convert.ToInt32(Console.ReadLine());
+            int tal2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Now type in what to do with them, +, -, *, /");
+            switch (Console.ReadLine())
+            {
+                case "+":
+                    Console.WriteLine("Added together {0}", tal1 + tal2);
+                    break;
+                case "-":
+                    Console.WriteLine("Subtracted together {0}", tal1 - tal2);
+                    break;
+                case "*":
+                    Console.WriteLine("Multiplied together {0}", tal1 * tal2);
+                    break;
+                case "/":
+                    Console.WriteLine("Divided together {0}", tal1 / tal2);
+                    break;
+                default:
+                    Console.WriteLine("Invalid operation");
+                    break;
+            }
+        }
+    }
+}
